@@ -1,29 +1,44 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій Блог</title>
+    <title>Мій блог</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <header>
-        <h1>Мій Блог</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#projects">Мої проекти</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <h2>Список публікацій</h2>
-        {% for post in posts %}
-            <article>
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.published_date }}</p>
-                <p>{{ post.content|truncatewords:30 }}</p>
-                <a href="#">Читати далі</a>
-            </article>
-        {% endfor %}
-    </main>
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Про мене</h2>
+                <p>Привіт! Я мобільний і бекенд-розробник. Працюю з Python, Dart, SQL та іншими сучасними технологіями.</p>
+            </div>
+            <div class="about-photo">
+                <img src="https://i.pinimg.com/474x/0d/4e/79/0d4e796a2ab986bb2f11012432d779ce.jpg" alt="Фото">
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="section">
+        <h2>Технології</h2>
+        <p>Я працюю з різними сучасними технологіями, включаючи Python, Dart, SQL, Django, Flask та FastAPI.</p>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Мій Блог. Всі права захищені.</p>
+        <p>&copy; 2025 Мій блог. Всі права захищено.</p>
     </footer>
 </body>
 </html>

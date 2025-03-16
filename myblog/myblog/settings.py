@@ -29,6 +29,13 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# settings.py
+STATIC_URL = '/static/'  # Цей параметр вказує на URL для статичних файлів
+
+# Якщо ти використовуєш Django в режимі розробки, потрібно додати також:
+STATICFILES_DIRS = [
+    BASE_DIR / "static",  # Переконайся, що шлях до статичних файлів вказаний вірно
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
