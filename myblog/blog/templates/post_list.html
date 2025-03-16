@@ -17,8 +17,13 @@
                 <h3>{{ post.title }}</h3>
                 <p>{{ post.published_date }}</p>
                 <p>{{ post.content|truncatewords:30 }}</p>
+                <a href="#">Читати далі</a>
             </article>
         {% endfor %}
     </main>
+
+    <footer>
+        <p>&copy; 2025 Мій Блог. Всі права захищені.</p>
+    </footer>
 </body>
 </html>
