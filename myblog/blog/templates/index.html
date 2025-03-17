@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Про мене</h2>
+                <p>Я 16-річний розробник з України (Івано-Франківська область). Люблю бекенд та мобільну розробку, працюю з Python, Django, Flutter, SQL та іншими технологіями.</p>
+            </div>
+            <div class="about-photo">
+                <img src="https://i.pinimg.com/474x/0d/4e/79/0d4e796a2ab986bb2f11012432d779ce.jpg" alt="Фото">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Мій блог. Всі права захищено.</p>
+    </footer>
+</body>
+</html>

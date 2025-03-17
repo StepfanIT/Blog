@@ -1,0 +1,27 @@
+@import url('style.css');
+
+.contact-section {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section ul li {
+    margin: 10px 0;
+}
+
+.contact-section ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1cc88a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-section ul li a:hover {
+    color: #4e73df;
+}

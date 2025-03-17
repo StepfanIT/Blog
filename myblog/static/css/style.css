@@ -13,9 +13,15 @@ body {
 
 /* Стилі для меню */
 .navbar {
-    background: linear-gradient(to right, #4e73df, #1cc88a);
+    background: #333;
     padding: 15px 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .navbar ul {
@@ -40,13 +46,13 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #333;
+    background-color: #1cc88a;
     transform: scale(1.1);
 }
 
 /* Стилі для секцій */
 .section {
-    padding: 40px;
+    padding: 80px 40px 40px;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -74,6 +80,14 @@ body {
     animation: scaleUp 1.5s ease-in-out;
 }
 
+/* Стилі для футера */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
 /* Анімації */
 @keyframes fadeIn {
     0% {
@@ -91,11 +105,4 @@ body {
     100% {
         transform: scale(1);
     }
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
 }
